@@ -1,0 +1,22 @@
+{
+  "name": "tdd-exercicio1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrieldss/tdd-exercicio1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrieldss/tdd-exercicio1/issues"
+  },
+  "homepage": "https://github.com/gabrieldss/tdd-exercicio1#readme",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
