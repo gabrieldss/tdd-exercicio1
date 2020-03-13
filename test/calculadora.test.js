@@ -38,4 +38,28 @@ describe('Calculadora', () => {
             expect(props2[2].parcelas).toBe(10);
             expect(props2[2].valorParcela).toBeCloseTo(150.00);
         });
+        test('cliente que ganha mais de 5000', () => {
+            let cliente3 = {
+                nome: 'Fernando da Silva',
+                salario: 6000.00,
+                idade: 29,
+                valorFinanciado: 1000.00
+            };
+            let calculadora = new Calculadora();
+            let props3 = calculadora.montarPropostas3(cliente3);
+            expect(props3.length).toBe(4);
+            expect(props3[0].total).toBeCloseTo(1100.00);
+            expect(props3[0].parcelas).toBe(2);
+            expect(props3[0].valorParcela).toBeCloseTo(550.00);
+            expect(props3[1].total).toBeCloseTo(1300.00);
+            expect(props3[1].parcelas).toBe(4);
+            expect(props3[1].valorParcela).toBeCloseTo(325.00);
+            expect(props3[2].total).toBeCloseTo(1300.00);
+            expect(props3[2].parcelas).toBe(10);
+            expect(props3[2].valorParcela).toBeCloseTo(130.00);
+            expect(props3[3].total).toBeCloseTo(1400.00);
+            expect(props3[3].parcelas).toBe(20);
+            expect(props3[3].valorParcela).toBeCloseTo(70.00);
+        });
+        
 });
